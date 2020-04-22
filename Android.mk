@@ -7,6 +7,12 @@ include $(QCOM_MEDIA_ROOT)/libstagefrighthw/Android.mk
 include $(QCOM_MEDIA_ROOT)/libaac/Android.mk
 endif
 
+include $(QCOM_MEDIA_ROOT)/mm-video-v4l2/Android.mk
+
+include $(QCOM_MEDIA_ROOT)/libc2dcolorconvert/Android.mk
+
+include $(QCOM_MEDIA_ROOT)/hypv-intercept/Android.mk
+
 ifeq ($(TARGET_BOARD_AUTO),true)
 include $(QCOM_MEDIA_ROOT)/libsidebandstreamhandle/Android.mk
 endif
